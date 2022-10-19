@@ -109,4 +109,136 @@ ul, ol {
 }
 .header__icon-list--linkedin:hover {
   background-color: #0579B6;
+}
+
+.planet {
+  display: flex;
+  height: 100vh;
+  background: #16a085;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+.planet__photo-wrap {
+  max-width: 315px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.planet__photo-first {
+  height: 75px;
+  width: 75px;
+  -webkit-animation: first 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+          animation: first 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+}
+@-webkit-keyframes first {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes first {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.planet__photo-second {
+  height: 75px;
+  width: 75px;
+  -webkit-animation: second 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+          animation: second 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes second {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes second {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.planet__photo-third {
+  height: 75px;
+  width: 75px;
+  -webkit-animation: third 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+          animation: third 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+@-webkit-keyframes third {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes third {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.planet__photo-forth {
+  height: 75px;
+  width: 75px;
+  -webkit-animation: forth 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+          animation: forth 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@-webkit-keyframes forth {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes forth {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

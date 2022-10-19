@@ -129,3 +129,93 @@ ul, ol{
         }
     }
 }
+
+
+.planet{
+    display: flex;
+    height: 100vh;
+    background: #16a085;
+    padding-top: 100px;
+    overflow-x: hidden;
+
+    &__photo-wrap{
+        max-width: 315px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__photo-first{
+        height: 75px;
+        width: 75px;
+        animation: first 1.5s cubic-bezier(.45,.05,.55,.95) infinite alternate;
+    }
+    @keyframes first{
+        0%{
+        opacity: 1;
+        }
+        50%{
+        opacity: 0.3;
+        }
+        100%{
+        opacity: 1;
+        }
+    }
+
+    &__photo-second{
+        height: 75px;
+        width: 75px;
+        animation: second 1.5s cubic-bezier(.45,.05,.55,.95) infinite alternate;
+        animation-delay: 1s;
+    }
+    @keyframes second{
+        0%{
+        opacity: 1;
+        }
+        50%{
+        opacity: 0.3;
+        }
+        100%{
+        opacity: 1;
+
+        }
+    }
+
+    &__photo-third{
+        height: 75px;
+        width: 75px;
+        animation: third 1.5s cubic-bezier(.45,.05,.55,.95) infinite alternate;
+        animation-delay: 1.5s;
+    }
+    @keyframes third{
+        0%{
+        opacity: 1;
+        }
+        50%{
+        opacity: 0.3;
+        }
+        100%{
+        opacity: 1;
+
+        }
+    }
+
+    &__photo-forth{
+        height: 75px;
+        width: 75px;
+        animation: forth 1.5s cubic-bezier(.45,.05,.55,.95) infinite alternate;
+        animation-delay: 2s;
+    }
+    @keyframes forth{
+        0%{
+        opacity: 1;
+        }
+        50%{
+        opacity: 0.3;
+        }
+        100%{
+        opacity: 1;
+
+        }
+    }
+}
