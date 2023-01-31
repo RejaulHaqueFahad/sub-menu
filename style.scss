@@ -148,6 +148,7 @@ ul, ol{
     &__photo-first{
         height: 75px;
         width: 75px;
+        cursor: pointer;
         animation: first 1.5s cubic-bezier(.45,.05,.55,.95) infinite alternate;
     }
     @keyframes first{
@@ -217,5 +218,27 @@ ul, ol{
         opacity: 1;
 
         }
+    }
+    &__text-wrap{
+        max-width: 500px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__write-space{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 50px;
+        font-weight: bold;
+        color: white;
+    }
+    &__text-slider{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 25px;
+        font-weight: bold;
+        color: white;
     }
 }
