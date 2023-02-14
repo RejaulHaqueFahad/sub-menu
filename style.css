@@ -115,32 +115,53 @@ ul, ol {
   display: flex;
   height: 100vh;
   background: #16a085;
-  padding-top: 100px;
   overflow-x: hidden;
 }
-.planet__photo-wrap {
-  max-width: 315px;
-  width: 100%;
+.planet__text-wrap {
+  max-width: 500px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.planet__text-slider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+.planet__button {
+  display: flex;
+  width: 150px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #16a085;
+  border: 1px solid #1abc9c;
+  border-radius: 5px;
+  margin: auto;
+}
+.planet__button:hover {
+  background-color: #1abc9c;
+}
+.planet__button-text {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.planet__photo-wrap {
+  display: none;
+  max-width: 215px;
+  width: 100%;
+  margin: 40px auto 20px;
 }
 .planet__photo-first {
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
   cursor: pointer;
-  -webkit-animation: first 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-          animation: first 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-}
-@-webkit-keyframes first {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: first 3s infinite;
+  animation-delay: 4s;
 }
 @keyframes first {
   0% {
@@ -154,23 +175,10 @@ ul, ol {
   }
 }
 .planet__photo-second {
-  height: 75px;
-  width: 75px;
-  -webkit-animation: second 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-          animation: second 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-@-webkit-keyframes second {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
+  height: 100px;
+  width: 100px;
+  animation: second 3s infinite;
+  animation-delay: 2s;
 }
 @keyframes second {
   0% {
@@ -184,23 +192,10 @@ ul, ol {
   }
 }
 .planet__photo-third {
-  height: 75px;
-  width: 75px;
-  -webkit-animation: third 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-          animation: third 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-@-webkit-keyframes third {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
+  height: 100px;
+  width: 100px;
+  animation: third 3s infinite;
+  animation-delay: 3s;
 }
 @keyframes third {
   0% {
@@ -214,23 +209,10 @@ ul, ol {
   }
 }
 .planet__photo-forth {
-  height: 75px;
-  width: 75px;
-  -webkit-animation: forth 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-          animation: forth 1.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-@-webkit-keyframes forth {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
+  height: 100px;
+  width: 100px;
+  animation: forth 3s infinite;
+  animation-delay: 4s;
 }
 @keyframes forth {
   0% {
@@ -243,25 +225,11 @@ ul, ol {
     opacity: 1;
   }
 }
-.planet__text-wrap {
-  max-width: 500px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .planet__write-space {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 40px;
   font-weight: bold;
   color: white;
-}
-.planet__text-slider {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 25px;
-  font-weight: bold;
-  color: white;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */

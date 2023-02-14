@@ -67,6 +67,12 @@
     </header>
     <section class="planet">
         <div class="container">
+            <div class="planet__text-wrap">
+                <marquee class="planet__text-slider" behavior="" direction="right">🖐🏼 Hello Planet</marquee>
+            </div>
+            <div class="planet__button">
+                <a class="planet__button-text" href="#">Click to see PLANETS</a>
+            </div>
             <div class="planet__photo-wrap">
                 <a href="images/blue.png" download><img class="planet__photo-first" src="images/blue.png" alt=""></a>
                 <a href="images/cloud.png" download><img class="planet__photo-second" src="images/cloud.png" alt=""></a>
@@ -74,10 +80,28 @@
                 <a href="images/thunder.png" download><img class="planet__photo-forth" src="images/thunder.png" alt=""></a>
             </div>
             <div class="planet__text-wrap">
-                <p class="planet__write-space" contenteditable="true">You can download these photos and also can write here anything......</p>
-                <marquee class="planet__text-slider" behavior="" direction="right">✌ PEACE</marquee>
+                <p class="planet__write-space" contenteditable="true">
+                    You can download these planets and write here about your experience.
+                </p>
             </div>
         </div>
     </section>
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $('.planet__write-space').click(function(){
+            $('.planet__write-space').css({
+                opacity: 1
+            });
+        })
+        $('.planet__button').click(function(){
+            $('.planet__photo-wrap').slideToggle();
+        })
+    </script>
 </body>
 </html>
