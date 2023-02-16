@@ -71,6 +71,7 @@ ul, ol{
         position: absolute;
         left: 100%;
         top: -3px;
+        z-index: 999;
     }
 
     &__sub-list{
